@@ -8,7 +8,7 @@ class MondayNightBrewery {
     
     def bottlesOfBeerOnTheWall(grab) { 
         println "$this bottles of beer on the wall..."
-        this.drink(1, { grab(it) }) 
+        this.drink(1, { beer -> grab(beer) }) 
     }
     
     def bottlesOfBeer() { 
